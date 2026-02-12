@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Work\\TransactionNotifier\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7C28EBFA-12DE-4759-BBC4-7CC9BADE53B1}|TransactionNotifier.csproj|c:\\work\\transactionnotifier\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C28EBFA-12DE-4759-BBC4-7CC9BADE53B1}|TransactionNotifier.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C28EBFA-12DE-4759-BBC4-7CC9BADE53B1}|TransactionNotifier.csproj|c:\\work\\transactionnotifier\\services\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C28EBFA-12DE-4759-BBC4-7CC9BADE53B1}|TransactionNotifier.csproj|solutionrelative:services\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C28EBFA-12DE-4759-BBC4-7CC9BADE53B1}|TransactionNotifier.csproj|c:\\work\\transactionnotifier\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C28EBFA-12DE-4759-BBC4-7CC9BADE53B1}|TransactionNotifier.csproj|solutionrelative:services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C28EBFA-12DE-4759-BBC4-7CC9BADE53B1}|TransactionNotifier.csproj|c:\\work\\transactionnotifier\\services\\momoapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C28EBFA-12DE-4759-BBC4-7CC9BADE53B1}|TransactionNotifier.csproj|solutionrelative:services\\momoapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C28EBFA-12DE-4759-BBC4-7CC9BADE53B1}|TransactionNotifier.csproj|c:\\work\\transactionnotifier\\models\\momoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C28EBFA-12DE-4759-BBC4-7CC9BADE53B1}|TransactionNotifier.csproj|solutionrelative:models\\momoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C28EBFA-12DE-4759-BBC4-7CC9BADE53B1}|TransactionNotifier.csproj|c:\\work\\transactionnotifier\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7C28EBFA-12DE-4759-BBC4-7CC9BADE53B1}|TransactionNotifier.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TransactionService.cs",
+              "DocumentMoniker": "C:\\Work\\TransactionNotifier\\Services\\TransactionService.cs",
+              "RelativeDocumentMoniker": "Services\\TransactionService.cs",
+              "ToolTip": "C:\\Work\\TransactionNotifier\\Services\\TransactionService.cs",
+              "RelativeToolTip": "Services\\TransactionService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAiwBkAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T15:23:17.187Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MomoResponse.cs",
+              "DocumentMoniker": "C:\\Work\\TransactionNotifier\\Models\\MomoResponse.cs",
+              "RelativeDocumentMoniker": "Models\\MomoResponse.cs",
+              "ToolTip": "C:\\Work\\TransactionNotifier\\Models\\MomoResponse.cs",
+              "RelativeToolTip": "Models\\MomoResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T16:47:09.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MomoApi.cs",
+              "DocumentMoniker": "C:\\Work\\TransactionNotifier\\Services\\MomoApi.cs",
+              "RelativeDocumentMoniker": "Services\\MomoApi.cs",
+              "ToolTip": "C:\\Work\\TransactionNotifier\\Services\\MomoApi.cs",
+              "RelativeToolTip": "Services\\MomoApi.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAqwDoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T16:44:35.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DbService.cs",
+              "DocumentMoniker": "C:\\Work\\TransactionNotifier\\Services\\DbService.cs",
+              "RelativeDocumentMoniker": "Services\\DbService.cs",
+              "ToolTip": "C:\\Work\\TransactionNotifier\\Services\\DbService.cs",
+              "RelativeToolTip": "Services\\DbService.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAuwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T16:02:09.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Work\\TransactionNotifier\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Work\\TransactionNotifier\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-27T15:17:32.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Work\\TransactionNotifier\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Work\\TransactionNotifier\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAhwBYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T16:10:20.072Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
