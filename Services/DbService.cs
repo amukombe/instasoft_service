@@ -19,12 +19,32 @@ namespace TransactionNotifier.Services
             conStr = config.GetConnectionString("Constr")?? throw new InvalidOperationException("Missing connection string: Constr");
         }
 
-        public async Task<DataTable> GetPendingTransactionsAsync()
+        public async Task<DataTable> GetPendingT2WTransactionsAsync()
         {
             var dt = new DataTable();
 
             await using var conn = new SqlConnection(conStr);
-            await using var cmd = new SqlCommand("GetPendingTransactions", conn)
+            await using var cmd = new SqlCommand("GetPendingT2WTransactions", conn)
+            {
+                CommandType = CommandType.StoredProcedure,
+                CommandTimeout = 40000
+            };
+
+            await conn.OpenAsync();
+
+            // DataTable needs DataAdapter (ADO.NET standard)
+            using var adapter = new SqlDataAdapter(cmd);
+            adapter.Fill(dt);
+
+            return dt;
+        }
+
+        public async Task<DataTable> GetPendingW2TTransactionsAsync()
+        {
+            var dt = new DataTable();
+
+            await using var conn = new SqlConnection(conStr);
+            await using var cmd = new SqlCommand("GetPendingW2TTransactions", conn)
             {
                 CommandType = CommandType.StoredProcedure,
                 CommandTimeout = 40000

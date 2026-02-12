@@ -91,3 +91,4 @@ C:\Work\TransactionNotifier\bin\Debug\net8.0\Microsoft.Extensions.Logging.EventS
 C:\Work\TransactionNotifier\bin\Debug\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\Work\TransactionNotifier\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 C:\Work\TransactionNotifier\bin\Debug\net8.0\appsettings.json
+C:\Work\TransactionNotifier\obj\Debug\net8.0\TransactionNotifier.sourcelink.json

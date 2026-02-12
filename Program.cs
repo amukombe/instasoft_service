@@ -16,7 +16,7 @@ while (true)
     try
     {
 
-        DataTable pending = await tranSvc.GetPendingTransactionsAsync();
+        DataTable pending = await tranSvc.GetPendingT2WTransactionsAsync();
         Console.WriteLine("Found : " + pending.Rows.Count + " pending Phone to Wallet transactions");
         foreach (DataRow row in pending.Rows)
         {
@@ -25,7 +25,7 @@ while (true)
                 continue;
             try
             {
-                var statusResp = await apiClient.GetTransactionStatusAsync(tranId);
+                var statusResp = await apiClient.GetCollectionTransactionStatus(tranId);
                 var status = statusResp.Status?.Trim().ToUpperInvariant();
 
                 Console.WriteLine("Processed: " + tranId + " Status: " + statusResp.Status);
@@ -34,6 +34,45 @@ while (true)
                     int result = 0;
                      result=await tranSvc.UpdateTransactionStatusAsync( tranId,"SUCCESS","0",
                         statusResp.FinancialTransactionId);
+                    if (result == 1)
+                        tranSvc.PostTransaction(tranId);
+                }
+                else if (status == "FAILED" || status == "REJECTED")
+                {
+                    await tranSvc.UpdateTransactionStatusAsync(
+                        tranId,
+                        "FAILED",
+                        "105",
+                        statusResp.FinancialTransactionId
+                    );
+                }
+                // else still pending → do nothing
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error processing TranId={tranId}: {ex.Message}");
+            }
+        }
+
+
+        DataTable pendingW2T = await tranSvc.GetPendingW2TTransactionsAsync();
+        Console.WriteLine("Found : " + pendingW2T.Rows.Count + " pending Phone to W2T transactions");
+        foreach (DataRow row in pendingW2T.Rows)
+        {
+            var tranId = row["TranId"]?.ToString();
+            if (string.IsNullOrWhiteSpace(tranId))
+                continue;
+            try
+            {
+                var statusResp = await apiClient.GetDisburbsementTransactionStatus(tranId);
+                var status = statusResp.Status?.Trim().ToUpperInvariant();
+
+                Console.WriteLine("Processed: " + tranId + " Status: " + statusResp.Status);
+                if (status == "SUCCESSFUL")
+                {
+                    int result = 0;
+                    result = await tranSvc.UpdateTransactionStatusAsync(tranId, "SUCCESS", "0",
+                       statusResp.FinancialTransactionId);
                     if (result == 1)
                         tranSvc.PostTransaction(tranId);
                 }

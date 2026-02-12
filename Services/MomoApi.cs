@@ -20,9 +20,9 @@ namespace TransactionNotifier.Services
             _baseUrl = config["PaymentsApi:BaseUrl"]?? throw new InvalidOperationException("Missing PaymentsApi:BaseUrl");
         }
 
-        public async Task<MomoResponse> GetTransactionStatusAsync(string requestId)
+        public async Task<MomoResponse> GetCollectionTransactionStatus(string requestId)
         {
-            var url = $"{_baseUrl}/api/Payments/GetTransactionStatus/{requestId}";
+            var url = $"{_baseUrl}/api/Payments/GetCollectionTransactionStatus/{requestId}";
             try
             {
                 var resp = await _http.GetAsync(url);
@@ -39,6 +39,27 @@ namespace TransactionNotifier.Services
                 throw ex;
             }
         
+        }
+
+        public async Task<MomoResponse> GetDisburbsementTransactionStatus(string requestId)
+        {
+            var url = $"{_baseUrl}/api/Payments/GetDisburbsementTransactionStatus/{requestId}";
+            try
+            {
+                var resp = await _http.GetAsync(url);
+                var json = await resp.Content.ReadAsStringAsync();
+
+                if (!resp.IsSuccessStatusCode)
+                    throw new HttpRequestException($"Payments API status call failed: {(int)resp.StatusCode} - {json}");
+
+                return JsonSerializer.Deserialize<MomoResponse>(json,
+                                                                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true })!;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
         }
     }
 }

@@ -17,7 +17,9 @@ namespace TransactionNotifier.Services
             dblogic = new DbService(config);
         }
 
-        public Task<DataTable> GetPendingTransactionsAsync() => dblogic.GetPendingTransactionsAsync();
+        public Task<DataTable> GetPendingT2WTransactionsAsync() => dblogic.GetPendingT2WTransactionsAsync();
+
+        public Task<DataTable> GetPendingW2TTransactionsAsync() => dblogic.GetPendingW2TTransactionsAsync();
 
         public Task<int> UpdateTransactionStatusAsync( string tranId, string status,string? statusCode, string? telecomId)
             => dblogic.UpdateTransactionStatusAsync(tranId, status, statusCode, telecomId);

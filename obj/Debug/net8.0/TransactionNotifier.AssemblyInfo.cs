@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TransactionNotifier")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49a918b3a85eb5bd05824bbdec5afe14d7a2fc5d")]
 [assembly: System.Reflection.AssemblyProductAttribute("TransactionNotifier")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TransactionNotifier")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
